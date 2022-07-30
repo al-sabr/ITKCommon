@@ -4,10 +4,17 @@ set(H_FILES
 
   include/itkCreateObjectFunction.h
   include/itkDataObject.h
+  include/itkDirectory.h
   include/itkEventObject.h
+  include/itkFixedArray.h
+  include/itkFixedArray.hxx
+  include/itkIntTypes.h
   include/itkLightObject.h
+  include/itkMakeFilled.h
   include/itkMetaDataDictionary.h
   include/itkMetaDataObjectBase.h
+  include/itkNumericTraits.h
+  include/itkNumericTraitsFixedArrayPixel.h
   include/itkObject.h
   include/itkObjectFactory.h
   include/itkObjectFactoryBase.h
@@ -30,15 +37,16 @@ set(H_FILES
 set(CPP_FILES
   src/itkCommand.cxx
   src/itkCreateObjectFunction.cxx
+  src/itkDirectory.cxx
   src/itkEventObject.cxx
+  src/itkExceptionObject.cxx
+  src/itkIdent.cxx
+  src/itkLightObject.cxx
   src/itkMetaDataDictionary.cxx
+  src/itkMetaDataObjectBase.cxx
   src/itkObject.cxx
   src/itkObjectFactoryBase.cxx
   src/itkRealTimeInterval.cxx
   src/itkRealTimeStamp.cxx
-  src/itkDirectory.cxx
-  src/itkExceptionObject.cxx
-  src/itkIndent.cxx
 
-  src/itkLightObject.cxx
 )
