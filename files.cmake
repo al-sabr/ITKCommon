@@ -3,6 +3,7 @@ set(H_FILES
   include/itkCommonEnums.h
 
   include/itkCreateObjectFunction.h
+  include/itkDataObject.h
   include/itkEventObject.h
   include/itkLightObject.h
   include/itkMetaDataDictionary.h
@@ -10,6 +11,8 @@ set(H_FILES
   include/itkObject.h
   include/itkObjectFactory.h
   include/itkObjectFactoryBase.h
+  include/itkRealTimeInterval.h
+  include/itkRealTimeStamp.h
   include/itkSingleton.h
   include/itkSingletonMacro.h
 
@@ -20,6 +23,7 @@ set(H_FILES
   include/itkSmartPointer.h
   include/itkTimestamp.h
   include/itkVersion.h
+  include/itkWeakPointer.h
   include/itkWindows.h
 )
 
@@ -30,7 +34,8 @@ set(CPP_FILES
   src/itkMetaDataDictionary.cxx
   src/itkObject.cxx
   src/itkObjectFactoryBase.cxx
-
+  src/itkRealTimeInterval.cxx
+  src/itkRealTimeStamp.cxx
   src/itkDirectory.cxx
   src/itkExceptionObject.cxx
   src/itkIndent.cxx
