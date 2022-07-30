@@ -40,7 +40,7 @@ set(CPP_FILES
   src/itkDirectory.cxx
   src/itkEventObject.cxx
   src/itkExceptionObject.cxx
-  src/itkIdent.cxx
+  src/itkIndent.cxx
   src/itkLightObject.cxx
   src/itkMetaDataDictionary.cxx
   src/itkMetaDataObjectBase.cxx
