@@ -1,0 +1,13 @@
+@PACKAGE_INIT@
+
+if(NOT TARGET itkCommon)
+  include("${CMAKE_CURRENT_LIST_DIR}/itkCommonTargets.cmake")
+    if((NOT TARGET itkCommon) AND
+       (NOT itkCommon OR
+       itkCommon_FIND_VERSION VERSION_LESS 1.0.1))
+        add_library(itkCommon INTERFACE IMPORTED)
+        set_target_properties(itkCommon PROPERTIES
+            INTERFACE_LINK_LIBRARIES itkCommon::itkCommon
+        )
+    endif()
+endif()
