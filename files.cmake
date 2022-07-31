@@ -31,6 +31,7 @@ set(H_FILES
   include/itkTimestamp.h
   include/itkVersion.h
   include/itkWeakPointer.h
+  include/itkWin32Header.h
   include/itkWindows.h
 )
 
