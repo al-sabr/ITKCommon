@@ -3,7 +3,6 @@ cmake_minimum_required(VERSION 3.0)
 project(ITKCommon)
 
 set(ITK_BINARY_DIR ${CMAKE_CURRENT_BINARY_DIR})
-message("ITK_BINARY_DIR ${ITK_BINARY_DIR}")
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/CMake ${CMAKE_MODULE_PATH})
 
 # Version string should not include patch level.  The major.minor is
