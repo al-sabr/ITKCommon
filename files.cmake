@@ -4,7 +4,7 @@ set(H_FILES
 
   include/itkConceptChecking.h
   include/itkContinuousIndex.h
-  include/itkCovariantVector.
+  include/itkCovariantVector.h
   include/itkCovariantVector.hxx
 
   include/itkCreateObjectFunction.h
