@@ -178,7 +178,6 @@ generate_export_header(${PROJECT_NAME}
 
 install(EXPORT ${PROJECT_NAME}Targets
           FILE ${PROJECT_NAME}Targets.cmake
-          NAMESPACE ${PROJECT_NAME}::
           DESTINATION lib/cmake/${PROJECT_NAME})
 
 install(TARGETS ${PROJECT_NAME}
@@ -201,7 +200,7 @@ install(FILES ${H_FILES}
   DESTINATION include/${PROJECT_NAME}
   )
 
-export(TARGETS ${PROJECT_NAME} NAMESPACE ${PROJECT_NAME}:: FILE ${PROJECT_NAME}Targets.cmake)
+export(TARGETS ${PROJECT_NAME} FILE ${PROJECT_NAME}Targets.cmake)
 
 set(CMAKE_EXPORT_PACKAGE_REGISTRY ON)
 export(PACKAGE ${PROJECT_NAME})
