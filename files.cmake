@@ -82,6 +82,4 @@ set(CPP_FILES
   src/itkSingleton.cxx
   src/itkTimestamp.cxx
   src/itkVector.cxx
-  src/itkVersion.cxx
-
 )
