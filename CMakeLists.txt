@@ -160,7 +160,7 @@ add_compile_definitions(${PROJECT_NAME}_EXPORTS)
 
 add_library(${PROJECT_NAME} STATIC ${CPP_FILES} ${H_FILES})
 
-include(CMakeExternals/KWSys.cmake)
+add_subdirectory(CMakeExternals)
 
 #include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
@@ -168,7 +168,7 @@ target_include_directories(${PROJECT_NAME} PUBLIC
 $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
 $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
 )
-target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
+#target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_BINARY_DIR})
 
 generate_export_header(${PROJECT_NAME}
   EXPORT_MACRO_NAME ITKCommon_EXPORT

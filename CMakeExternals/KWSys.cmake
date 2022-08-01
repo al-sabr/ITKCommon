@@ -33,7 +33,6 @@ set_property(TARGET itksys PROPERTY IMPORTED_LOCATION ${INSTALL_DIR}/install/lib
 #add_dependencies(ITKCommon itksys)
 
 set(FINAL_DIR ${BINARY_DIR}/${KWSYS_INSTALL_EXPORT_DIR})
-message("FINAL_DIR ${FINAL_DIR}")
 
 set(itksys_DIR ${FINAL_DIR})
 
